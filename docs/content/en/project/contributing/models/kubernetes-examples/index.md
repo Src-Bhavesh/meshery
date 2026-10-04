@@ -48,8 +48,9 @@ meshery-example-web`, which the Service uses as its selector.
 The Service forwards port `80` to the container's named `http` port. It uses
 `ClusterIP`, so it does not request an external load balancer.
 
-In Meshery, open **Designs > Import Design**, choose **Kubernetes manifest**,
-and upload `deployment-service.yaml`.
+In Meshery, open **Designs > Import Design**, choose **File Upload**,
+select `deployment-service.yaml`, and click **Import**.
+Meshery detects the Kubernetes manifest format automatically.
 Inspect the imported Deployment and Service and compare their configuration with
 the manifest.
 Importing a Design does not deploy it. See [Importing and Exporting Designs]({{<
